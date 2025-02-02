@@ -85,7 +85,6 @@ tf.reset_default_graph()
 model = create_model(all_questions_train, tags_output, tags, all_question_words)
 model.fit_model(all_questions_train, tags_output)
 
-# Preparing sub tags models
 sub_tags_list = []
 sub_tags_models = []
 

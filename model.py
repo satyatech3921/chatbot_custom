@@ -36,7 +36,6 @@ class create_model:
 
 	def predict_tag(self, sentence):
 		results = self.model.predict([self.input_words(sentence)])
-		# tag = self.tags[np.argmax(results)]
 		return np.argmax(results)
 
 	def get_tags(self):
